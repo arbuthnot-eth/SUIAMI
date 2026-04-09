@@ -1,16 +1,54 @@
 {
   "name": "suiami",
-  "version": "1.0.0",
-  "description": "SUI-Authenticated Message Identity — cryptographic proof of SuiNS name ownership",
+  "version": "2.0.0",
+  "description": "SUI-Authenticated Message Identity — cryptographic proof of SuiNS name ownership with cross-chain address attestation",
   "type": "module",
-  "main": "src/suiami.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "exports": {
-    ".": "./src/suiami.ts"
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./verify": {
+      "import": "./dist/verify.js",
+      "types": "./dist/verify.d.ts"
+    },
+    "./roster": {
+      "import": "./dist/roster.js",
+      "types": "./dist/roster.d.ts"
+    }
   },
-  "files": ["src", "README.md"],
+  "files": [
+    "dist",
+    "contracts",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "tsc"
+  },
+  "keywords": [
+    "sui",
+    "suins",
+    "identity",
+    "proof",
+    "cross-chain",
+    "ika",
+    "dwallet",
+    "seal",
+    "walrus"
+  ],
+  "author": "brando.sui",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/arbuthnot-eth/SUIAMI"
+  },
+  "peerDependencies": {
+    "@noble/hashes": ">=1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
   }
 }
