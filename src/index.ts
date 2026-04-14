@@ -1,5 +1,5 @@
 /**
- * SUIAMI — SUI-Authenticated Message Identity
+ * SUIAMI — SUI-AUTH-MSG-ID
  *
  * Cryptographic proof that a wallet owner controls a SuiNS name
  * with cross-chain address attestation via IKA dWallets.

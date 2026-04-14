@@ -1,7 +1,7 @@
 {
   "name": "suiami",
-  "version": "0.2.0",
-  "description": "SUI-Authenticated Message Identity — cryptographic proof of SuiNS name ownership with cross-chain address attestation",
+  "version": "0.2.1",
+  "description": "SUI-AUTH-MSG-ID — cryptographic proof of SuiNS name ownership with cross-chain address attestation",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
